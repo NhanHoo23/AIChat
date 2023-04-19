@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073E0921299A1604008DD4A9 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E0920299A1604008DD4A9 /* FavouriteViewController.swift */; };
+		073E0923299A1A9B008DD4A9 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E0922299A1A9B008DD4A9 /* RealmDB.swift */; };
+		073E0925299A1BAC008DD4A9 /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E0924299A1BAC008DD4A9 /* FavouriteModel.swift */; };
+		077104052993B0890039FDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104042993B0890039FDAF /* AppDelegate.swift */; };
+		077104072993B0890039FDAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104062993B0890039FDAF /* SceneDelegate.swift */; };
+		0771040E2993B08B0039FDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0771040D2993B08B0039FDAF /* Assets.xcassets */; };
+		077104112993B08B0039FDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0771040F2993B08B0039FDAF /* LaunchScreen.storyboard */; };
+		0771041B2993B2310039FDAF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771041A2993B2310039FDAF /* ImageViewController.swift */; };
+		0771041E2993B2FD0039FDAF /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0771041D2993B2FD0039FDAF /* OpenAIKit */; };
+		07710423299493A50039FDAF /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710422299493A50039FDAF /* UIViewExt.swift */; };
+		0771042E299499F60039FDAF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07710426299499F60039FDAF /* Roboto-Regular.ttf */; };
+		0771042F299499F60039FDAF /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07710427299499F60039FDAF /* Roboto-Light.ttf */; };
+		07710430299499F60039FDAF /* Berlin Sans FB Demi Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07710428299499F60039FDAF /* Berlin Sans FB Demi Bold.ttf */; };
+		07710431299499F60039FDAF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07710429299499F60039FDAF /* Roboto-Black.ttf */; };
+		07710432299499F60039FDAF /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0771042A299499F60039FDAF /* Roboto-Thin.ttf */; };
+		07710433299499F60039FDAF /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0771042B299499F60039FDAF /* Roboto-Bold.ttf */; };
+		07710434299499F60039FDAF /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0771042C299499F60039FDAF /* Roboto-Medium.ttf */; };
+		07710435299499F60039FDAF /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0771042D299499F60039FDAF /* Roboto-Italic.ttf */; };
+		0771043829949A750039FDAF /* AppContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771043729949A750039FDAF /* AppContraints.swift */; };
+		0771043B29949F180039FDAF /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771043A29949F180039FDAF /* TabbarItem.swift */; };
+		0771043D29949F260039FDAF /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771043C29949F260039FDAF /* TabbarView.swift */; };
+		0771044029949FAF0039FDAF /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771043F29949FAF0039FDAF /* AppManager.swift */; };
+		077104422994A0750039FDAF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104412994A0750039FDAF /* MainViewController.swift */; };
+		077104442994A0B80039FDAF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104432994A0B80039FDAF /* ChatViewController.swift */; };
+		077104462994AE190039FDAF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104452994AE190039FDAF /* MainCollectionViewCell.swift */; };
+		0771044C2994CDBA0039FDAF /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771044B2994CDBA0039FDAF /* ChatTableViewCell.swift */; };
+		077104512994D6ED0039FDAF /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104502994D6ED0039FDAF /* APICaller.swift */; };
+		077104532994E0C30039FDAF /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104522994E0C30039FDAF /* UIViewControllerExt.swift */; };
+		077104562994E2840039FDAF /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077104552994E2840039FDAF /* MessageModel.swift */; };
+		0771045E2995E3F20039FDAF /* OpenAIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771045D2995E3F20039FDAF /* OpenAIModel.swift */; };
+		077104602995FE7B0039FDAF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771045F2995FE7B0039FDAF /* ImageCollectionViewCell.swift */; };
+		07710494299645720039FDAF /* VipMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07710493299645720039FDAF /* VipMenuItem.swift */; };
+		0771049629964CA30039FDAF /* VipMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771049529964CA30039FDAF /* VipMenuView.swift */; };
+		0771049829964D990039FDAF /* VipMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771049729964D990039FDAF /* VipMenu.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		073E0920299A1604008DD4A9 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		073E0922299A1A9B008DD4A9 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
+		073E0924299A1BAC008DD4A9 /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
+		077104012993B0890039FDAF /* Dalle-E.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dalle-E.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		077104042993B0890039FDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		077104062993B0890039FDAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0771040D2993B08B0039FDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		077104102993B08B0039FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		077104122993B08B0039FDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0771041A2993B2310039FDAF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		07710422299493A50039FDAF /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		07710426299499F60039FDAF /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		07710427299499F60039FDAF /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		07710428299499F60039FDAF /* Berlin Sans FB Demi Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Berlin Sans FB Demi Bold.ttf"; sourceTree = "<group>"; };
+		07710429299499F60039FDAF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		0771042A299499F60039FDAF /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		0771042B299499F60039FDAF /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0771042C299499F60039FDAF /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0771042D299499F60039FDAF /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0771043729949A750039FDAF /* AppContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContraints.swift; sourceTree = "<group>"; };
+		0771043A29949F180039FDAF /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
+		0771043C29949F260039FDAF /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		0771043F29949FAF0039FDAF /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		077104412994A0750039FDAF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		077104432994A0B80039FDAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		077104452994AE190039FDAF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		0771044B2994CDBA0039FDAF /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		077104502994D6ED0039FDAF /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		077104522994E0C30039FDAF /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		077104552994E2840039FDAF /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		0771045D2995E3F20039FDAF /* OpenAIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModel.swift; sourceTree = "<group>"; };
+		0771045F2995FE7B0039FDAF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		0771048D299609D60039FDAF /* Dalle-E copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Dalle-E copy-Info.plist"; path = "/Users/nhanho/Documents/TestProject/Dall-E/Dalle-E/Dalle-E copy-Info.plist"; sourceTree = "<absolute>"; };
+		07710493299645720039FDAF /* VipMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipMenuItem.swift; sourceTree = "<group>"; };
+		0771049529964CA30039FDAF /* VipMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipMenuView.swift; sourceTree = "<group>"; };
+		0771049729964D990039FDAF /* VipMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipMenu.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077103FE2993B0890039FDAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0771041E2993B2FD0039FDAF /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073E091F299A15E8008DD4A9 /* FavouriteVC */ = {
+			isa = PBXGroup;
+			children = (
+				073E0920299A1604008DD4A9 /* FavouriteViewController.swift */,
+			);
+			path = FavouriteVC;
+			sourceTree = "<group>";
+		};
+		077103F82993B0890039FDAF = {
+			isa = PBXGroup;
+			children = (
+				077104032993B0890039FDAF /* Dalle-E */,
+				077104022993B0890039FDAF /* Products */,
+				D2FE9567943677D6EC86B649 /* Pods */,
+				0771048D299609D60039FDAF /* Dalle-E copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		077104022993B0890039FDAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077104012993B0890039FDAF /* Dalle-E.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		077104032993B0890039FDAF /* Dalle-E */ = {
+			isa = PBXGroup;
+			children = (
+				077104182993B0D50039FDAF /* SupportingFiles */,
+				07710424299499D40039FDAF /* Resource */,
+				077104212994938F0039FDAF /* Exts */,
+				0771043629949A4E0039FDAF /* AppContraints */,
+				077104542994E26A0039FDAF /* Models */,
+				0771043E29949FA20039FDAF /* Utils */,
+				0771043929949ECA0039FDAF /* Subviews */,
+				077104922996451E0039FDAF /* Animation */,
+				077104192993B2080039FDAF /* ViewControllers */,
+			);
+			path = "Dalle-E";
+			sourceTree = "<group>";
+		};
+		077104182993B0D50039FDAF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				077104042993B0890039FDAF /* AppDelegate.swift */,
+				077104062993B0890039FDAF /* SceneDelegate.swift */,
+				0771040D2993B08B0039FDAF /* Assets.xcassets */,
+				0771040F2993B08B0039FDAF /* LaunchScreen.storyboard */,
+				077104122993B08B0039FDAF /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		077104192993B2080039FDAF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				073E091F299A15E8008DD4A9 /* FavouriteVC */,
+				077104492994CD9B0039FDAF /* ImageVC */,
+				077104482994CD8E0039FDAF /* ChatVC */,
+				077104472994B1350039FDAF /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		077104212994938F0039FDAF /* Exts */ = {
+			isa = PBXGroup;
+			children = (
+				07710422299493A50039FDAF /* UIViewExt.swift */,
+				077104522994E0C30039FDAF /* UIViewControllerExt.swift */,
+			);
+			path = Exts;
+			sourceTree = "<group>";
+		};
+		07710424299499D40039FDAF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				07710425299499DF0039FDAF /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		07710425299499DF0039FDAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				07710428299499F60039FDAF /* Berlin Sans FB Demi Bold.ttf */,
+				07710429299499F60039FDAF /* Roboto-Black.ttf */,
+				0771042B299499F60039FDAF /* Roboto-Bold.ttf */,
+				0771042D299499F60039FDAF /* Roboto-Italic.ttf */,
+				07710427299499F60039FDAF /* Roboto-Light.ttf */,
+				0771042C299499F60039FDAF /* Roboto-Medium.ttf */,
+				07710426299499F60039FDAF /* Roboto-Regular.ttf */,
+				0771042A299499F60039FDAF /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0771043629949A4E0039FDAF /* AppContraints */ = {
+			isa = PBXGroup;
+			children = (
+				0771043729949A750039FDAF /* AppContraints.swift */,
+			);
+			path = AppContraints;
+			sourceTree = "<group>";
+		};
+		0771043929949ECA0039FDAF /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0771043A29949F180039FDAF /* TabbarItem.swift */,
+				0771043C29949F260039FDAF /* TabbarView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		0771043E29949FA20039FDAF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0771043F29949FAF0039FDAF /* AppManager.swift */,
+				077104502994D6ED0039FDAF /* APICaller.swift */,
+				073E0922299A1A9B008DD4A9 /* RealmDB.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		077104472994B1350039FDAF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				077104412994A0750039FDAF /* MainViewController.swift */,
+				077104452994AE190039FDAF /* MainCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		077104482994CD8E0039FDAF /* ChatVC */ = {
+			isa = PBXGroup;
+			children = (
+				0771044A2994CDA90039FDAF /* Cells */,
+				077104432994A0B80039FDAF /* ChatViewController.swift */,
+			);
+			path = ChatVC;
+			sourceTree = "<group>";
+		};
+		077104492994CD9B0039FDAF /* ImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				0771041A2993B2310039FDAF /* ImageViewController.swift */,
+				0771045F2995FE7B0039FDAF /* ImageCollectionViewCell.swift */,
+			);
+			path = ImageVC;
+			sourceTree = "<group>";
+		};
+		0771044A2994CDA90039FDAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0771044B2994CDBA0039FDAF /* ChatTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		077104542994E26A0039FDAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				077104552994E2840039FDAF /* MessageModel.swift */,
+				0771045D2995E3F20039FDAF /* OpenAIModel.swift */,
+				073E0924299A1BAC008DD4A9 /* FavouriteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		077104922996451E0039FDAF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				07710493299645720039FDAF /* VipMenuItem.swift */,
+				0771049529964CA30039FDAF /* VipMenuView.swift */,
+				0771049729964D990039FDAF /* VipMenu.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		D2FE9567943677D6EC86B649 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		077104002993B0890039FDAF /* Dalle-E */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077104152993B08B0039FDAF /* Build configuration list for PBXNativeTarget "Dalle-E" */;
+			buildPhases = (
+				077103FD2993B0890039FDAF /* Sources */,
+				077103FE2993B0890039FDAF /* Frameworks */,
+				077103FF2993B0890039FDAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dalle-E";
+			packageProductDependencies = (
+				0771041D2993B2FD0039FDAF /* OpenAIKit */,
+			);
+			productName = "Dalle-E";
+			productReference = 077104012993B0890039FDAF /* Dalle-E.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		077103F92993B0890039FDAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					077104002993B0890039FDAF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 077103FC2993B0890039FDAF /* Build configuration list for PBXProject "Dalle-E" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 077103F82993B0890039FDAF;
+			packageReferences = (
+				0771041C2993B2FD0039FDAF /* XCRemoteSwiftPackageReference "OpenAIKit.git" */,
+				0771044D2994D5E90039FDAF /* XCRemoteSwiftPackageReference "OpenAISwift.git" */,
+			);
+			productRefGroup = 077104022993B0890039FDAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				077104002993B0890039FDAF /* Dalle-E */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		077103FF2993B0890039FDAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07710432299499F60039FDAF /* Roboto-Thin.ttf in Resources */,
+				0771042E299499F60039FDAF /* Roboto-Regular.ttf in Resources */,
+				077104112993B08B0039FDAF /* LaunchScreen.storyboard in Resources */,
+				07710430299499F60039FDAF /* Berlin Sans FB Demi Bold.ttf in Resources */,
+				0771042F299499F60039FDAF /* Roboto-Light.ttf in Resources */,
+				0771040E2993B08B0039FDAF /* Assets.xcassets in Resources */,
+				07710433299499F60039FDAF /* Roboto-Bold.ttf in Resources */,
+				07710435299499F60039FDAF /* Roboto-Italic.ttf in Resources */,
+				07710431299499F60039FDAF /* Roboto-Black.ttf in Resources */,
+				07710434299499F60039FDAF /* Roboto-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		077103FD2993B0890039FDAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0771049629964CA30039FDAF /* VipMenuView.swift in Sources */,
+				07710423299493A50039FDAF /* UIViewExt.swift in Sources */,
+				0771049829964D990039FDAF /* VipMenu.swift in Sources */,
+				0771043D29949F260039FDAF /* TabbarView.swift in Sources */,
+				073E0921299A1604008DD4A9 /* FavouriteViewController.swift in Sources */,
+				073E0923299A1A9B008DD4A9 /* RealmDB.swift in Sources */,
+				077104512994D6ED0039FDAF /* APICaller.swift in Sources */,
+				0771045E2995E3F20039FDAF /* OpenAIModel.swift in Sources */,
+				077104052993B0890039FDAF /* AppDelegate.swift in Sources */,
+				077104602995FE7B0039FDAF /* ImageCollectionViewCell.swift in Sources */,
+				077104072993B0890039FDAF /* SceneDelegate.swift in Sources */,
+				0771043829949A750039FDAF /* AppContraints.swift in Sources */,
+				0771043B29949F180039FDAF /* TabbarItem.swift in Sources */,
+				077104422994A0750039FDAF /* MainViewController.swift in Sources */,
+				077104462994AE190039FDAF /* MainCollectionViewCell.swift in Sources */,
+				0771041B2993B2310039FDAF /* ImageViewController.swift in Sources */,
+				077104562994E2840039FDAF /* MessageModel.swift in Sources */,
+				07710494299645720039FDAF /* VipMenuItem.swift in Sources */,
+				0771044C2994CDBA0039FDAF /* ChatTableViewCell.swift in Sources */,
+				073E0925299A1BAC008DD4A9 /* FavouriteModel.swift in Sources */,
+				077104442994A0B80039FDAF /* ChatViewController.swift in Sources */,
+				077104532994E0C30039FDAF /* UIViewControllerExt.swift in Sources */,
+				0771044029949FAF0039FDAF /* AppManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0771040F2993B08B0039FDAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077104102993B08B0039FDAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		077104132993B08B0039FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		077104142993B08B0039FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		077104162993B08B0039FDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q49MB8L5FH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dalle-E/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "xin quyen";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.atsoft.Dalle-E";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		077104172993B08B0039FDAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q49MB8L5FH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dalle-E/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Chat ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "xin quyen";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.atsoft.Dalle-E";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077103FC2993B0890039FDAF /* Build configuration list for PBXProject "Dalle-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077104132993B08B0039FDAF /* Debug */,
+				077104142993B08B0039FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077104152993B08B0039FDAF /* Build configuration list for PBXNativeTarget "Dalle-E" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077104162993B08B0039FDAF /* Debug */,
+				077104172993B08B0039FDAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0771041C2993B2FD0039FDAF /* XCRemoteSwiftPackageReference "OpenAIKit.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcodotio/OpenAIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0771044D2994D5E90039FDAF /* XCRemoteSwiftPackageReference "OpenAISwift.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0771041D2993B2FD0039FDAF /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0771041C2993B2FD0039FDAF /* XCRemoteSwiftPackageReference "OpenAIKit.git" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 077103F92993B0890039FDAF /* Project object */;
+}

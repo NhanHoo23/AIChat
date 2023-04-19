@@ -1,0 +1,36 @@
+PODS:
+  - Hero (1.6.2)
+  - MTSDK (3.0.7)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - Realm (10.35.0):
+    - Realm/Headers (= 10.35.0)
+  - Realm/Headers (10.35.0)
+  - RealmSwift (10.35.0):
+    - Realm (= 10.35.0)
+
+DEPENDENCIES:
+  - Hero
+  - MTSDK
+  - NVActivityIndicatorView
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - MTSDK
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  MTSDK: c2a6eee4531732dbbf610cd245d25519af123e39
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Realm: e6b04f15a814cb22aae621e7e15f2ccb27ac8f95
+  RealmSwift: b358779c10ba6d2648d541f8a1bcd671f73485c1
+
+PODFILE CHECKSUM: b28c70d7cdb710bed6e88876daf6ffb16399c8c3
+
+COCOAPODS: 1.11.3
